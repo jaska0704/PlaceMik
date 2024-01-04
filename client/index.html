@@ -40,23 +40,99 @@
             <option value="везде">Везде</option>
           </select>
           <input class="input w-[70%]" type="search" name="search" id="search">
-          <i class="fa-solid fa-search"></i>
+          <i class="w-6 fa-solid fa-search"></i>
         </div>
         <div class="flex gap-10">
-          <div class="text-center"><img class="mx-2" src="/images/user.svg" alt="logouser"><p class="text-center text-sm">Войти</p></div>
-          <div class="text-center"><img class="mx-6" src="/images/Group.svg" alt="logouser"><p class="text-center text-sm">Избранное</p></div>
-          <div class="text-center"><img class="mx-6" src="/images/shop-cart.svg" alt="logouser"><p class="text-center text-sm">Корзина</p></div>
+          <div class="text-center">
+            <img class="mx-2" src="/images/user.svg" alt="logouser"><p class="text-center text-sm">Войти</p>
+          </div>
+          <div class="text-center">
+            <a href="/pages/card.html"><img class="mx-6" src="/images/Group.svg" alt="logouser"></a>
+            <a href="/pages/card.html"><p class="text-center text-sm">Избранное</p></a>
+          </div>
+          <div class="text-center">
+            <img class="mx-6" src="/images/shop-cart.svg" alt="logouser"><p class="text-center text-sm">Корзина</p>
+          </div>
         </div>
       </div>
     </header>
     <section id="hero" class="hero container1 flex mt-5 gap-7">
-      <div class="hero_block1 flex bg-gradient-to-r from-purple-500 to-pink-500 px-[2rem] py-[0.5rem] text-xl rounded-md hover:bg-yellow-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 w-2/5 h-10">
-        <img src="/images/menu2.png" alt="">
-        <p class="hero_block1_item text-sm">Популярные категории</p>
+      <div class="hero_block1 w-2/5">
+        <div class="flex hero_bar bg-gradient-to-r from-purple-500 to-pink-500 px-[2rem] py-[0.5rem] text-xl rounded-md hover:bg-yellow-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300  h-10">
+          <img src="/images/menu2.png" alt="">
+          <p class="hero_block1_item text-sm">Популярные категории</p>
+        </div>
+        <ul class="ul border p-4 shadow-lg rounded-e-sm hidden">
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/laptop1.png" alt=""></span>
+            <p>Компьютеры и оргтехника</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/power-plug1.png" alt=""></span>
+            <p>Электроника</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/microwave1.png" alt=""></span>
+            <p>Бытовая техника</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/dress1.png" alt=""></span>
+            <p>Одежда для женщин</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/t-shirt1.png" alt=""></span>
+            <p>Одежда для мужчин</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/baby-boy1.png" alt=""></span>
+            <p>Все для детей</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/steering-wheel1.png" alt=""></span>
+            <p>Автотовары</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/lotus1.png" alt=""></span>
+            <p>Красота и здоровье</p>
+          </li>
+          <li class="flex items-center gap-5 pl-9 text-sm hover:font-bold">
+            <span><img src="/images/ball1.png" alt=""></span>
+            <p>Спорт и развлечения</p>
+          </li>
+          <li class="text-sm text-pink-300 mt-5">
+            <select name="" id="">
+              <option value="">Все категории</option>
+            </select>
+          </li>
+        </ul>
       </div>
       <div class="hero_block2">
         <img src="/images/baner1.png" alt="">
       </div>
     </section>
+    <section class="products">
+      <div class="container1 products_block flex flex-wrap gap-5 mt-20">
+        <!-- <div class="product w-1/6 p-5 border rounded shadow">
+          <img class="w-full" src="/images/boy2.png" alt="boy2">
+          <div class="product_price flex justify-around items-center">
+            <p class="text-[#FF4343]">1999 ₽</p>
+            <p class="text-[10px] line-through text-slate-400">2999 ₽</p>
+          </div>
+          <div class="otziv hidden">
+            <span>4.9</span><i class="fa-solid fa-star"></i>
+            <p>14 отзывов</p>
+          </div>
+          <div class="product_title">
+            <h4 class="hidden">Marple</h4>
+          </div>
+          <p class="text-xs mt-3">Футболка80 с дизайнерским принтом Super Shape 0201 абстракция на фиолетовом фоне</p>
+          <div class="product_button hidden">
+            <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-[2rem] py-[0.5rem] text-xl rounded-md hover:bg-yellow-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 inline-block">В корзину</button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <script src="/Js/main.js"></script>
   </body>
 </html>
