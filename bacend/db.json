@@ -106,6 +106,85 @@
   ],
   "newProducts": [
     {
+      "id": 1,
+      "count": 7,
+      "price": 2399,
+      "title": "Футболка с дизайнерским принтом Super Shape 04 формулы",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/newProducts/t-shirt4.png"
+    },
+    {
+      "id": 2,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/newProducts/t-shirt91.png"
+    },
+    {
+      "id": 3,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/newProducts/t-shirt6.png"
+    },
+    {
+      "id": 4,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    },
+    {
+      "id": 12,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    },
+    {
+      "id": 12,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    },
+    {
+      "id": 12,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    },
+    {
+      "id": 12,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    },
+    {
+      "id": 12,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    },
+    {
+      "id": 12,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    },
+    {
       "id": 12,
       "count": 7,
       "price": 1999,
