@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "count": 14,
+      "count": 12,
       "price": 3179,
       "priceTo": 4499,
       "title": "Футболка с дизайнерским принтом Super Shape 01 градиент",
@@ -25,7 +25,7 @@
     },
     {
       "id": 3,
-      "count": 14,
+      "count": 11,
       "price": 1375,
       "priceTo": 2399,
       "title": "Бейсболка с дизайнерским принтом Super Shape 01 белая",
@@ -33,7 +33,7 @@
     },
     {
       "id": 4,
-      "count": 14,
+      "count": 4,
       "price": 599,
       "priceTo": 999,
       "title": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03",
@@ -41,7 +41,7 @@
     },
     {
       "id": 5,
-      "count": 14,
+      "count": 9,
       "price": 1999,
       "priceTo": 2999,
       "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
@@ -49,7 +49,7 @@
     },
     {
       "id": 6,
-      "count": 14,
+      "count": 7,
       "price": 3179,
       "priceTo": 4499,
       "title": "Футболка с дизайнерским принтом Super Shape 01 градиент",
@@ -57,7 +57,7 @@
     },
     {
       "id": 7,
-      "count": 14,
+      "count": 5,
       "price": 1375,
       "priceTo": 2399,
       "title": "Бейсболка с дизайнерским принтом Super Shape 01 белая",
@@ -65,7 +65,7 @@
     },
     {
       "id": 8,
-      "count": 14,
+      "count": 9,
       "price": 599,
       "priceTo": 999,
       "title": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03",
@@ -73,7 +73,7 @@
     },
     {
       "id": 9,
-      "count": 14,
+      "count": 24,
       "price": 599,
       "priceTo": 999,
       "title": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03",
@@ -81,7 +81,7 @@
     },
     {
       "id": 10,
-      "count": 14,
+      "count": 18,
       "price": 1999,
       "priceTo": 2999,
       "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
@@ -89,7 +89,7 @@
     },
     {
       "id": 11,
-      "count": 14,
+      "count": 6,
       "price": 599,
       "priceTo": 999,
       "title": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03",
@@ -97,12 +97,22 @@
     },
      {
        "id": 12,
-       "count": 14,
+       "count": 7,
        "price": 1999,
        "priceTo": 2999,
        "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
        "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
      }
+  ],
+  "newProducts": [
+    {
+      "id": 12,
+      "count": 7,
+      "price": 1999,
+      "priceTo": 2999,
+      "title": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "img": "https://raw.githubusercontent.com/jaska0704/PlaceMik/master/client/images/boy3.png"
+    }
   ],
   "comments": [
     {

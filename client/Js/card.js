@@ -3,29 +3,14 @@ let id = params.get("id");
 const baseUrl = "http://localhost:3000/products";
 
 let mainBox = document.querySelector(".main-box");
-let count = 12;
+const item_count = document.querySelector(".item-count");
+let product = null;
 
- mainBox.addEventListener("click", async (e) => {
-   const res = await fetch(`${baseUrl}/${id}`);
-   const data = await res.json();
-   const incId = Number(e.target.dataset.inc);
-   const decId = Number(e.target.dataset.dec);
-   if (incId) {
-     data.count -= 1;
-     console.log(incId);
-   }
-   
-   if (decId) {
-     data.count += 1;
-   }
- });
+let products = JSON.parse(localStorage.getItem("products"));
+let oldProducts = products ? products : [];
 
-
-const renderCard = async () => {
-    try {
-        const res = await fetch(`${baseUrl}/${id}`);
-        const data = await res.json();
-        mainBox.innerHTML = `<div class="main_box1 w-1/2">
+const renderCard = (data) => {
+  mainBox.innerHTML = `<div class="main_box1 w-1/2">
         <img class="w-full" src=${data.img} alt="">
         </div>
         <div class="main_box2 w-1/2 ml-20">
@@ -55,9 +40,11 @@ const renderCard = async () => {
             <span class="border cursor-pointer p-2 active:bg-amber-300">S</span><span class="border cursor-pointer p-2 active:bg-amber-300">M</span><span class="border cursor-pointer p-2 active:bg-amber-300">L</span><span class="border cursor-pointer p-2 active:bg-amber-300">XL</span><span class="border cursor-pointer p-2 active:bg-amber-300">XXL</span>
             </div>
             <div class="flex items-center mt-5">
-            <button data-inc=${data.id} class="py-1 border bg-slate-400">🔽</button>
-            <p>${data.count}</p>
-            <button data-dec=${data.id} class="py-1 border bg-slate-400">🔼</button>
+            <button id="decrement" class="py-1 border bg-slate-400">🔽</button>
+            <p id="count">${data?.userCount || "0"}</p>
+            <button id="increment" class="py-1 border bg-slate-400">🔼</button><strong class="ml-5 p-1 w-24" id="totalPrice">${
+              data?.userPrice || "0"
+            } $</strong>
             <button class="ml-8 bg-gradient-to-r from-purple-500 to-pink-500 px-[2rem] py-[0.5rem] text-xl rounded-md hover:bg-yellow-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Купить сейчас</button>
             <button class="ml-8 border-y-indigo-800 bg-gradient-to-r  from-purple-100 to-pink-100 px-[2rem] py-[0.5rem] text-xl rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Добавить в корзину</button>
             </div>
@@ -70,8 +57,48 @@ const renderCard = async () => {
             </div>
             
             </div>`;
-        } catch (error) {}
-    };
-    
-   
-    renderCard();
+  localStorage.setItem("products", JSON.stringify(oldProducts));
+  item_count.textContent = oldProducts.reduce((a, b) => b.userCount + a, 0);
+};
+
+const renderProductDetail = async () => {
+  try {
+    const res = await fetch(`${baseUrl}/${id}`);
+    product = await res.json();
+    let el = oldProducts.find((item) => item.id === product.id);
+    renderCard(el ? el : product);
+  } catch (error) {}
+};
+renderProductDetail();
+
+mainBox.addEventListener("click", async (e) => {
+  let id = e.target.id;
+  let el = oldProducts.find((item) => item.id === product.id);
+  console.log(el);
+  if (id === "increment") {
+    if (!el) {
+      let newProduct = {
+        ...product,
+        userPrice: product.price,
+        userCount: 1,
+      };
+      oldProducts.push(newProduct);
+      renderCard(newProduct);
+    } else {
+      el.userCount += 1;
+      el.userPrice = el.userCount * el.price;
+    }
+  }
+  if (id === "decrement") {
+    if (el.userCount > 0) {
+      el.userCount -= 1;
+      el.userPrice = el.userCount * el.price;
+    }
+  }
+
+  if (el) {
+   renderCard(el);
+  }
+});
+
+
